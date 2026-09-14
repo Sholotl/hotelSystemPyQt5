@@ -386,7 +386,7 @@ class Main_Window(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("9 ROOMS")
-        self.setWindowIcon(QIcon("Assets/Icon.png"))
+        self.setWindowIcon(QIcon("assets/Icon.png"))
 
         self.main_layout = QHBoxLayout()
         self.main_layout.setContentsMargins(0, 0, 0, 0)
@@ -408,7 +408,7 @@ class Main_Window(QWidget):
         side_lay.setContentsMargins(0, 0, 0, 0)
 
         logo = QLabel() 
-        logo.setPixmap(QPixmap("Assets/Logo.png"))
+        logo.setPixmap(QPixmap("assets/Logo.png"))
         logo.setScaledContents(True)
         logo.setFixedSize(200, 160)
         side_lay.addWidget(logo)
@@ -455,6 +455,7 @@ class Main_Window(QWidget):
             case "Modificaciones": self.indice.setCurrentIndex(3)
             case "Eliminar": self.indice.setCurrentIndex(4)
 
+#==============================================================================
 class cliente():
     def __init__(self, hab, nombre, ciudad, dias, forma, can=1):
         self.hab = hab
